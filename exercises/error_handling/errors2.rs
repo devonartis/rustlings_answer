@@ -17,13 +17,21 @@
 // one is a lot shorter! Execute `rustlings hint errors2` for hints to both ways.
 
 // I AM NOT DONE
+// #100DaysOfRust
+// Day 35  
+// This took a long time as I did not want to use ? I wanted to actually respond
+// with the "invalid digit found in string" 
+// I will have to come back to understanding how to use the ParseIntError
+// Need to study https://doc.rust-lang.org/std/num/struct.ParseIntError.html
+
+
 
 use std::num::ParseIntError;
 
 pub fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
     let processing_fee = 1;
     let cost_per_item = 5;
-    let qty = item_quantity.parse::<i32>();
+    let qty = item_quantity.parse::<i32>()?;
 
     Ok(qty * cost_per_item + processing_fee)
 }
