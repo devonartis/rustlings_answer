@@ -6,9 +6,19 @@
 
 // I AM NOT DONE
 
+
+// #100DaysOfRust
+// Day 36
+// Jan 8,2022 
+// Stop coding during the new year to spend time with family
+
+
+
 use std::num::ParseIntError;
 
-fn main() {
+//Change main to return result and ParseIntError
+
+fn main()  -> Result<(), ParseIntError> {
     let mut tokens = 100;
     let pretend_user_input = "8";
 
@@ -20,6 +30,8 @@ fn main() {
         tokens -= cost;
         println!("You now have {} tokens.", tokens);
     }
+
+    Ok(())
 }
 
 pub fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {

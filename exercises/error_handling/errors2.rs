@@ -16,7 +16,7 @@
 // There are at least two ways to implement this that are both correct-- but
 // one is a lot shorter! Execute `rustlings hint errors2` for hints to both ways.
 
-// I AM NOT DONE
+
 // #100DaysOfRust
 // Day 35  
 // This took a long time as I did not want to use ? I wanted to actually respond
